@@ -1,0 +1,144 @@
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+    <script>
+        let e = document.querySelector(".e");
+let one = document.querySelector(".btn1");
+let two = document.querySelector(".btn2");
+let three = document.querySelector(".btn3");
+let four = document.querySelector(".btn4");
+let five = document.querySelector(".btn5");
+let six = document.querySelector(".btn6");
+let seven = document.querySelector(".btn7");
+let eight = document.querySelector(".btn8");
+let nine = document.querySelector(".btn9");
+let zero = document.querySelector(".btn0");
+let dot = document.querySelector(".dot");
+let ac = document.querySelector(".ac");
+let plus = document.querySelector(".plus");
+let minas = document.querySelector(".minas");
+let btnd = document.querySelector(".btnd");
+let btnk = document.querySelector(".btnk");
+let btnequal = document.querySelector(".btnequal");
+one.onclick = function ()
+        {
+            e.value = `${e.value}1`;
+        }
+        two.onclick = function ()
+        {
+        a.value=a.value+'2';
+        }
+        three.onclick = function () 
+        {
+        a.value=a.value+"3";
+        }
+        four.onclick = function ()
+        {
+        a.value=a.value+"4";
+        }
+        five.onclick = function ()
+        {
+        a.value=a.value+"5";
+        }
+        six.onclick = function ()
+        {
+        a.value=a.value+"6";
+        }
+        seven.onclick = function ()
+        {
+        a.value=a.value+"7";
+        }
+        eight.onclick = function ()
+        {
+        a.value=a.value+"8";
+        }
+        nine.onclick = function ()
+        {
+        a.value=a.value+"9";
+        }
+        zero.onclick = function ()
+        {
+        a.value=a.value+"0";
+        }
+        function fsin()
+        {
+        
+        var y= Number(a.value);
+        var z= Math.sin(y* Math.PI / 180);
+        var u=z.toString();
+        a.value=u;
+        }
+        function fcos()
+        {
+        
+        var y= Number(a.value);
+        var z= Math.cos(y* Math.PI / 180);
+        var u=z.toString();
+        a.value=u;
+        }
+        function ftan()
+        {
+        
+        var y= Number(a.value);
+        var z= Math.tan(y* Math.PI / 180);
+        var u=z.toString();
+        a.value=u;
+        }
+        var plus = '+';
+        var minus = '-';
+        var multiply = '*';
+        var divide = '/';
+        var decimal = '.';
+        function compute(obj){
+        (obj.expr.value=eval(obj.expr.value);}
+        function enter(obj, string); 
+        {obj.expr.value += string;}
+        function clear(obj) 
+        {obj.expr.value = '';}
+        </script>
+        
+<form name ="dis">
+    <input type ="text" class="e" name="a" value="0">
+<br>
+<div class="f">
+    <button class ="a" id="b" " name="l"  onclick= "fsin()">sin</button>
+<button class ="a" id="b" name="m"  onclick= "fcos()">cos</button>
+<button class ="a" id="b" name="n"  onclick= "ftan()">tan</button>
+<button class ="a" id="b"  name="p">pow</button>
+
+<button class ="a" id="c" name="q"  >C</button>
+<button class ="a btnmi" id="c" name="r"  >+/-</button>
+<button class ="a btn100" id="c" name="s"  >%</button>
+<button class ="a btnk" id="b"  name="t"  >/</button>
+
+<button class ="a btn7" id="d"  name="h"  >7</button>
+<button class ="a btn8" id="d"  name="i"  >8</button>
+<button class ="a btn9" id="d"   name="j"  >9</button>
+<button class ="a btnd" id="b"  onclick="enter(this.form, multiply)" >X</button>
+
+<button class ="a btn4" id="d" name="e"  >4</button>
+<button class ="a btn5" id="d" name="f"  >5</button>
+<button class ="a btn6" id="d" name="g"  >6</button>
+<button class ="a minas" id="b" onclick="enter(this.form, minus)"  >-</button>
+
+<button class ="a btn1" id="d" name="b"  >1</button>
+<button class ="a btn2" id="d" name="c"  >2</button>
+<button class ="a btn3" id="d" name="d" >3</button>
+<button class ="a plus" id="b" onclick="enter(this.form, plus)"  >+</button>
+
+
+<button class ="a btn0" id="d" name="k"  >0</button>
+
+<button class ="a dot" id="d" onclick="enter(this.form, decimal)">.</button>
+<button class ="a btnequal" id="b" onclick="compute(this.form)"type="button">=</button>
+<button class ="a ac" id="b"onclick="clear(this.form)" style="padding:50px;" type="reset" >AC</button>
+
+</div>
+
+</form>
+
+</body>
+</html>
